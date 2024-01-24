@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/navbar";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Vishal Thapa portfolio",
-};
 
 export default function RootLayout({
   children,
