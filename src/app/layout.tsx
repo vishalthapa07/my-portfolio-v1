@@ -13,10 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <div className="bg-gradient-to-b from-light fixed h-[100vh] w-full">
-      <head className={quicksand.className}>
+      <div className={quicksand.className}>
         <NavigationBar />
-      </head>
-      <body className={quicksand.className}>{children}</body>
+      </div>
+      <div className={quicksand.className}>{children}</div>
     </div>
   );
 }
