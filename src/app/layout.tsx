@@ -11,6 +11,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  <meta name="google" content="notranslate" />;
   return (
     <div className="bg-gradient-to-b from-light fixed h-[100vh] w-full">
       <div className={quicksand.className}>
