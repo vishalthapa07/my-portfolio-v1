@@ -1,7 +1,7 @@
 "use client";
 
 import { Quicksand } from "next/font/google";
-import "./globals.css";
+import "./style/globals.css";
 import NavigationBar from "@/components/navbar";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
