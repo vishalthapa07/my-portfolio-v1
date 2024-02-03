@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 const Introduction = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-36">
       <div className="font-bold">
         <div className="flex justify-center mb-6">
           <img src="/me.png" alt="me" className="rounded-full h-72" />
@@ -46,10 +47,20 @@ const Introduction = () => {
             A
           </div>
         </div>
-        <h5 className="text-3xl font-bold tracking-tight text-primary animate-pulse">
-          Fullstack Developer
-        </h5>
-        <p className="font-normal text-xl text-pink">Learning Enthusiastic</p>
+        <TypeAnimation
+          className="text-3xl font-bold tracking-tight text-primary py-4"
+          sequence={[
+            "Fullstack Developer",
+            1000,
+            "Learning Enthusiastic",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ fontSize: "2em", display: "inline-block" }}
+          repeat={Infinity}
+        />
+
         <div className="border-b-2 border-primary w-16 pb-4"></div>
       </div>
       <div className="flex gap-3 py-4">

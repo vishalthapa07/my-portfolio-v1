@@ -7,9 +7,9 @@ const NavigationBar = () => {
     <Navbar
       fluid
       rounded
-      className="bg-gradient-to-r from-primary to-pink text-white !rounded-none"
+      className="bg-gradient-to-r from-primary to-pink text-white !rounded-none !px-36"
     >
-      <div className="flex md:order-2 ">
+      <div className="flex md:order-2">
         <Button className="text-white text-base bg-transparent border border-white hover:!bg-transparent hover:!scale-110">
           Hire me
         </Button>
