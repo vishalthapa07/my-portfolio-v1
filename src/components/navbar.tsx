@@ -1,23 +1,18 @@
 "use client";
 
 import { Button, Navbar } from "flowbite-react";
+import Link from "next/link";
 
 const NavigationBar = () => {
   return (
     <Navbar
       fluid
       rounded
-      className="bg-gradient-to-r from-primary to-pink text-white !rounded-none !px-36"
+      className="bg-primary text-white !rounded-none !px-36 !py-6"
     >
-      <div className="flex md:order-2">
-        <Button className="text-white text-base bg-transparent border border-white hover:!bg-transparent hover:!scale-110">
-          Hire me
-        </Button>
-        <Navbar.Toggle />
-      </div>
       <Navbar.Collapse>
         <Navbar.Link
-          href="#"
+          href="/"
           active
           className="!text-white !text-base hover:!scale-110"
         >
@@ -42,6 +37,17 @@ const NavigationBar = () => {
           Contact Me
         </Navbar.Link>
       </Navbar.Collapse>
+      <Link
+        href="https://www.linkedin.com/in/vishal-thapa-7a6692141/"
+        target="_blank"
+      >
+        <div className="flex md:order-2">
+          <Button className="text-white text-base bg-transparent border border-white hover:!bg-transparent hover:!scale-110">
+            Hire me
+          </Button>
+          <Navbar.Toggle />
+        </div>
+      </Link>
     </Navbar>
   );
 };
