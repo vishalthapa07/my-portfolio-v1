@@ -1,97 +1,49 @@
 "use client";
 
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiMedium } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
 
 const Introduction = () => {
   return (
-    <div className="flex flex-col px-36">
-      <div className="font-bold">
-        <div className="flex justify-center mb-6">
-          <img src="/me.png" alt="me" className="rounded-full h-72" />
-        </div>
-        <div className="flex flex-wrap text-4xl front-bold">
-          <div className="border-2 animate-bounce shadow-lg shadow-primary flex justify-center bg-primary w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            V
-          </div>
-          <div className="border-2 shadow-lg shadow-pink flex justify-center bg-pink w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            I
-          </div>
-          <div className="border-2 shadow-lg shadow-primary flex justify-center bg-primary w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            S
-          </div>
-          <div className="border-2 shadow-lg shadow-pink flex justify-center bg-pink w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            H
-          </div>
-          <div className="border-2 flex justify-center bg-primary w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            A
-          </div>
-          <div className="border-2 shadow-lg shadow-pink flex justify-center bg-pink w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            L
-          </div>
-        </div>
-        <div className="flex flex-wrap text-4xl front-bold">
-          <div className="border-2 shadow-lg shadow-pink flex justify-center bg-pink w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            T
-          </div>
-          <div className="border-2 shadow-lg shadow-primary flex justify-center bg-primary w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            H
-          </div>
-          <div className="border-2 shadow-lg shadow-pink flex justify-center bg-pink w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            A
-          </div>
-          <div className="border-2 shadow-lg shadow-primary flex justify-center bg-primary w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            P
-          </div>
-          <div className="border-2 shadow-lg shadow-pink flex justify-center bg-pink w-20 text-white p-4 mr-4 mb-4 rounded-2xl">
-            A
-          </div>
-        </div>
+    <div>
+      <div>
         <TypeAnimation
-          className="text-3xl font-bold tracking-tight text-primary py-4"
-          sequence={[
-            "Fullstack Developer",
-            1000,
-            "Learning Enthusiastic",
-            1000,
-          ]}
+          className="text-3xl font-bold tracking-tight text-white py-4"
+          sequence={["Vishal Thapa", 1000]}
           wrapper="span"
-          speed={50}
-          style={{ fontSize: "2em", display: "inline-block" }}
+          speed={5}
+          style={{ fontSize: "6em", display: "inline-block" }}
           repeat={Infinity}
         />
-
-        <div className="border-b-2 border-primary w-16 pb-4"></div>
       </div>
+      <TypeAnimation
+        className="text-3xl font-bold tracking-tight text-white py-4"
+        sequence={["Fullstack Developer", 1000, "Learning Enthusiastic", 1000]}
+        wrapper="span"
+        speed={20}
+        style={{ fontSize: "2em", display: "inline-block" }}
+        repeat={Infinity}
+      />
+      <div className="border-b-2 border-white w-16 pb-4"></div>
       <div className="flex gap-3 py-4">
         <div>
           <Link
             href={"https://www.linkedin.com/in/vishal-thapa-7a6692141/"}
             target="_blank"
           >
-            <img
-              src="/linkedin.png"
-              alt="linkedin"
-              className="h-12 hover:scale-110"
-            />
+            <FaLinkedin className="text-5xl text-white hover:scale-110" />
           </Link>
         </div>
         <div>
           <Link href={"https://github.com/vishalqubits"} target="_blank">
-            <img
-              src="/github.png"
-              alt="linkedin"
-              className="h-12 hover:scale-110"
-            />
+            <FaGithub className="text-5xl text-white hover:scale-110" />
           </Link>
         </div>
         <div>
           <Link href={"https://medium.com/@vishalqubits"} target="_blank">
-            <img
-              src="/medium.png"
-              alt="linkedin"
-              className="h-12 hover:scale-110"
-            />
+            <SiMedium className="text-5xl text-white hover:scale-110" />
           </Link>
         </div>
       </div>
