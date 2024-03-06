@@ -8,7 +8,7 @@ const NavigationBar = () => {
     <Navbar
       fluid
       rounded
-      className="bg-primary text-white !rounded-none !px-36 !py-6"
+      className="bg-primary !text-white !rounded-none !px-36 !py-6"
     >
       <Navbar.Collapse>
         <Navbar.Link
@@ -18,12 +18,7 @@ const NavigationBar = () => {
         >
           Home
         </Navbar.Link>
-        <Navbar.Link
-          href="#"
-          className="!text-white !text-base hover:!scale-110"
-        >
-          Skills
-        </Navbar.Link>
+
         <Navbar.Link
           href="#"
           className="!text-white !text-base hover:!scale-110"
