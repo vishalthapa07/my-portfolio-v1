@@ -11,16 +11,10 @@ import Image from "next/image";
 const Introduction = () => {
   return (
     <div>
-      <div>
-        <TypeAnimation
-          className="text-3xl font-bold tracking-tight text-white py-4"
-          sequence={["Vishal Thapa", 1000]}
-          wrapper="span"
-          speed={5}
-          style={{ fontSize: "6em", display: "inline-block" }}
-          repeat={Infinity}
-        />
+      <div className="text-white text-7xl font-bold tracking-tight">
+        Vishal Thapa
       </div>
+
       <TypeAnimation
         className="text-3xl font-bold tracking-tight text-white py-4"
         sequence={["Fullstack Developer", 1000, "Learning Enthusiastic", 1000]}
@@ -62,14 +56,14 @@ export function ThreeDCardDemo() {
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] sm:w-[30rem] w-full h-full rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-2xl font-bold text-gray-700 dark:text-white"
+          className="text-2xl font-bold text-black dark:text-white"
         >
           About me
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-gray-500 text-sm mt-2 dark:text-neutral-300 w-full text-justify"
+          className="text-black text-sm mt-2 dark:text-neutral-300 w-full text-justify"
         >
           Hey there! I am Vishal, a software developer hailing from Nepal.
           Specializing in crafting immersive and user-centric online
@@ -81,7 +75,7 @@ export function ThreeDCardDemo() {
             src="/me.png"
             height="1000"
             width="1000"
-            className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className="h-96 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
@@ -89,14 +83,14 @@ export function ThreeDCardDemo() {
           <CardItem
             translateZ={20}
             as="button"
-            className="px-4 py-2 rounded-xl text-sm font-normal text-gray-700 dark:text-black"
+            className="px-4 py-2 rounded-xl text-sm font-normal text-black"
           >
             Skills →
           </CardItem>
           <CardItem
             translateZ={20}
             as="button"
-            className="px-4 py-2 rounded-xl bg-gray-700 dark:bg-white dark:text-black text-white text-sm font-bold"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white text-white text-sm font-bold"
           >
             Contact me
           </CardItem>

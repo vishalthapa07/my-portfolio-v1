@@ -8,3 +8,17 @@ body {
   font-family: __Quicksand_8de393, __Quicksand_Fallback_8de393;
   font-style: normal;
 }
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+div.ToolbarWrapper-sc-cif21b-6 {
+  z-index: -10;
+}
