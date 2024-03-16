@@ -1,9 +1,10 @@
 "use client";
 
 import { Tabs } from "./ui/tabs";
-import WorkExperience from "./work-experience";
 import { Timeline } from "flowbite-react";
 import { HiCalendar } from "react-icons/hi";
+import DeveloperExperience from "./developer-experience";
+import TeachingExperience from "./teaching-experience";
 
 export function TabsDemo() {
   const tabs = [
@@ -18,12 +19,22 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Work Experience",
-      value: "services",
+      title: "Developer Experience",
+      value: "developer",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
-          <p>Work Experience tab</p>
-          <WorkExperience />
+          <p>Developer Experience tab</p>
+          <DeveloperExperience />
+        </div>
+      ),
+    },
+    {
+      title: "Teaching Experience",
+      value: "teaching",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
+          <p>Teaching Experience tab</p>
+          <TeachingExperience />
         </div>
       ),
     },
