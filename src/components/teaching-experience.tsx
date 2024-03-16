@@ -3,37 +3,19 @@
 import { Timeline } from "flowbite-react";
 import { HiCalendar } from "react-icons/hi";
 
-const workConstant = [
+const teachingConstant = [
   {
     id: 1,
-    date: "Jan 2023 - Present",
-    position: "Fullstack Developer",
-    location: " SkillPrompt, Butwal, Nepal",
-  },
-  {
-    id: 1,
-    date: "Jan 2022 - Dec 2022",
-    position: "Backend Developer",
-    location: " SkillPrompt, Butwal, Nepal",
-  },
-  {
-    id: 1,
-    date: "Jul 2021 - Dec 2021",
-    position: "Frontend Developer",
-    location: " SkillPrompt, Butwal, Nepal",
-  },
-  {
-    id: 1,
-    date: "Apr 2021 - Jun 2021",
-    position: "UI/UX Designer",
+    date: "Jan 2022 - Present",
+    position: "Instructor",
     location: " SkillPrompt, Butwal, Nepal",
   },
 ];
 
-const WorkExperience = () => {
+const TeachingExperience = () => {
   return (
     <Timeline className="my-4">
-      {workConstant.map((item) => {
+      {teachingConstant.map((item) => {
         return (
           <Timeline.Item key={item.id}>
             <Timeline.Point icon={HiCalendar} />
@@ -53,4 +35,4 @@ const WorkExperience = () => {
   );
 };
 
-export default WorkExperience;
+export default TeachingExperience;
