@@ -1,5 +1,6 @@
 "use client";
 
+import { ContactMe } from "@/components/contact-me";
 import Introduction, { ThreeDCardDemo } from "@/components/introduction";
 import { TabsDemo } from "@/components/skills";
 
@@ -17,6 +18,9 @@ export default function Home() {
 
       <div className="px-4 -mt-24 md:-mt-16">
         <TabsDemo />
+      </div>
+      <div>
+        <ContactMe />
       </div>
     </>
   );
