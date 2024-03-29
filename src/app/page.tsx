@@ -16,10 +16,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-4 -mt-24 md:-mt-16">
+      <div id="work" className="px-4">
         <TabsDemo />
       </div>
-      <div>
+      <div id="contact">
         <ContactMe />
       </div>
     </>

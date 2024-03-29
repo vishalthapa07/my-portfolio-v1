@@ -7,7 +7,8 @@ export const ContainerScroll = ({
   titleComponent,
 }: {
   details: {
-    name: string;
+    id: number;
+    name: React.JSX.Element;
   }[];
   titleComponent: string | React.ReactNode;
 }) => {
@@ -82,7 +83,8 @@ export const Card = ({
   scale: any;
   translate: any;
   details: {
-    name: string;
+    id: number;
+    name: React.JSX.Element;
   }[];
 }) => {
   return (
@@ -99,12 +101,8 @@ export const Card = ({
         {details.map((item, idx: number) => (
           <motion.div
             key={`details-${idx}`}
-            className="bg-white rounded-md cursor-pointer relative"
+            className="rounded-md cursor-pointer relative"
             style={{ translateY: translate }}
-            whileHover={{
-              boxShadow:
-                "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-            }}
           >
             <div className="p-4">
               <h1 className="font-semibold text-sm ">{item.name}</h1>
