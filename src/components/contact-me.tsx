@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
+import { MdEmail, MdLocalPhone } from "react-icons/md";
 
 export function ContactMe() {
   return (
@@ -22,6 +23,21 @@ export function ContactMe() {
 export const contactDetails = [
   {
     id: 1,
-    name: "Comming soon !!",
+    name: (
+      <div className="flex flex-col">
+        <div className="flex items-center gap-1 mb-2 text-base hover:!scale-110">
+          <div>
+            <MdEmail className="text-lg" />
+          </div>
+          <div>thapavishal48@gmail.com</div>
+        </div>
+        <div className="flex items-center gap-1 text-base hover:!scale-110">
+          <div>
+            <MdLocalPhone className="text-lg" />
+          </div>
+          <div>(+977) 9863658842</div>
+        </div>
+      </div>
+    ),
   },
 ];

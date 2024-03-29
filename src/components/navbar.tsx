@@ -2,6 +2,9 @@
 
 import { Button, Navbar } from "flowbite-react";
 import Link from "next/link";
+import { HiBriefcase } from "react-icons/hi";
+import { IoMdHome } from "react-icons/io";
+import { MdLocalPhone } from "react-icons/md";
 
 const NavigationBar = () => {
   return (
@@ -16,20 +19,35 @@ const NavigationBar = () => {
           active
           className="!text-white !text-base hover:!scale-110"
         >
-          Home
+          <div className="flex items-center gap-1">
+            <div>
+              <IoMdHome className="text-lg" />
+            </div>
+            <div> Home</div>
+          </div>
         </Navbar.Link>
 
         <Navbar.Link
-          href="#"
+          href="#work"
           className="!text-white !text-base hover:!scale-110"
         >
-          Work Experience
+          <div className="flex items-center gap-1">
+            <div>
+              <HiBriefcase className="text-lg" />
+            </div>
+            <div>Work Experience</div>
+          </div>
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          href="#contact"
           className="!text-white !text-base hover:!scale-110"
         >
-          Contact Me
+          <div className="flex items-center gap-1">
+            <div>
+              <MdLocalPhone className="text-lg" />
+            </div>
+            <div>Contact Me</div>
+          </div>
         </Navbar.Link>
       </Navbar.Collapse>
       <Link
