@@ -34,7 +34,7 @@ const Introduction = () => {
           </Link>
         </div>
         <div>
-          <Link href={"https://github.com/vishalqubits"} target="_blank">
+          <Link href={"https://github.com/vishalthapa07"} target="_blank">
             <FaGithub className="text-5xl text-white hover:scale-110" />
           </Link>
         </div>
