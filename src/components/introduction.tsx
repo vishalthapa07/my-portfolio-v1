@@ -85,14 +85,14 @@ export function ThreeDCardDemo() {
             as="button"
             className="px-4 py-2 rounded-xl text-sm font-normal text-black"
           >
-            Skills →
+            <a href="#work">Skills →</a>
           </CardItem>
           <CardItem
             translateZ={20}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white text-white text-sm font-bold"
           >
-            Contact me
+            <a href="#contact">Contact me</a>
           </CardItem>
         </div>
       </CardBody>
