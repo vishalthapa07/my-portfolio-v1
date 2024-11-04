@@ -7,7 +7,7 @@ import { TabsDemo } from "@/components/skills";
 export default function Home() {
   return (
     <>
-      <div className="bg-primary h-screen px-4 md:px-36 flex flex-col md:flex-row items-center justify-between gap-8 z-50">
+      <div className="bg-primary h-screen px-4 lg:px-36 flex flex-col lg:flex-row items-center justify-between gap-8 z-50">
         <div className="w-full">
           <Introduction />
         </div>
@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="work" className="px-4">
+      <div id="work" className="px-4 pt-64 lg:pt-32">
         <TabsDemo />
       </div>
       <div id="contact">
