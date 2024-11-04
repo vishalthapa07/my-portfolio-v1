@@ -19,7 +19,7 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Developer Experience",
+      title: "Developer",
       value: "developer",
       content: (
         <div className="w-full overflow-auto no-scrollbar relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
@@ -29,7 +29,7 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Teaching Experience",
+      title: "Teaching",
       value: "teaching",
       content: (
         <div className="w-full overflow-auto no-scrollbar relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
