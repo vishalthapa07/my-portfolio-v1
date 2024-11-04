@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="work" className="px-4 pt-64 lg:pt-32">
+      <div id="work" className="px-4 pt-48 lg:pt-20">
         <TabsDemo />
       </div>
       <div id="contact">
