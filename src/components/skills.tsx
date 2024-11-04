@@ -12,7 +12,7 @@ export function TabsDemo() {
       title: "Skills",
       value: "product",
       content: (
-        <div className="w-full overflow-auto relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
+        <div className="w-full overflow-auto no-scrollbar relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
           <p>Skills Tab</p>
           <Skills />
         </div>
@@ -22,7 +22,7 @@ export function TabsDemo() {
       title: "Developer Experience",
       value: "developer",
       content: (
-        <div className="w-full overflow-auto relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
+        <div className="w-full overflow-auto no-scrollbar relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
           <p>Developer Experience tab</p>
           <DeveloperExperience />
         </div>
@@ -32,7 +32,7 @@ export function TabsDemo() {
       title: "Teaching Experience",
       value: "teaching",
       content: (
-        <div className="w-full overflow-auto relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
+        <div className="w-full overflow-auto no-scrollbar relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-primary">
           <p>Teaching Experience tab</p>
           <TeachingExperience />
         </div>
@@ -41,7 +41,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-28 md:my-40">
       <Tabs tabs={tabs} />
     </div>
   );
