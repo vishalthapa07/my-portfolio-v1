@@ -67,12 +67,13 @@ export function ThreeDCardDemo() {
         >
           Hey there! I am Vishal, a software developer hailing from Nepal.
           Specializing in crafting immersive and user-centric online
-          experiences, I bring 3+ years of hands-on expertise to the world of
-          web applications and websites development.
+          experiences, I bring 4+ years of hands-on expertise to the world of
+          web applications and websites development. Moreover, I am also
+          interested and exploring in the AI fields.
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src="/me.jpeg"
+            src="/developer01.gif"
             height="1000"
             width="1000"
             className="h-96 w-full object-cover rounded-xl group-hover/card:shadow-xl"

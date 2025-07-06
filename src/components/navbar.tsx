@@ -11,7 +11,7 @@ const NavigationBar = () => {
     <Navbar
       fluid
       rounded
-      className="bg-primary !text-white !rounded-none !px-36 !py-6"
+      className="bg-primary !text-white !rounded-none px-4 py-8 md:!px-36 md:!py-6"
     >
       <Navbar.Collapse>
         <Navbar.Link
@@ -50,17 +50,18 @@ const NavigationBar = () => {
           </div>
         </Navbar.Link>
       </Navbar.Collapse>
-      <Link
-        href="https://www.linkedin.com/in/vishal-thapa-7a6692141/"
-        target="_blank"
-      >
-        <div className="flex md:order-2">
+
+      <div className="flex md:order-2 mt-4 ml-0 md:ml-4">
+        <Link
+          href="https://www.linkedin.com/in/vishal-thapa-7a6692141/"
+          target="_blank"
+        >
           <Button className="text-white text-base bg-transparent border border-white hover:!bg-transparent hover:!scale-110">
             Hire me
           </Button>
-          <Navbar.Toggle />
-        </div>
-      </Link>
+        </Link>
+        <Navbar.Toggle />
+      </div>
     </Navbar>
   );
 };
