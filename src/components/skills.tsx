@@ -55,12 +55,13 @@ const skillsConstant = [
       "React, Next JS, Typescript, React Native, Tailwind, Flowbite, Zustand, JS, CSS, HTML",
   },
   {
-    id: 1,
+    id: 2,
     stack: "Backend Technologies",
-    tools: "Node JS, Express JS, Rest API, GraphQL, Prisma, Database: MYSQL",
+    tools:
+      "Node JS, Express JS, Rest API, GraphQL, Prisma, Database: MYSQL, MongoDB",
   },
   {
-    id: 1,
+    id: 3,
     stack: "Others",
     tools: "Git & GitHub, Figma, Wordpress, Vercel, Python, AWS",
   },

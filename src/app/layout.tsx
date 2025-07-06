@@ -1,23 +1,32 @@
-"use client";
+import type { Metadata } from "next";
 
-import { Quicksand } from "next/font/google";
 import "./style/globals.css";
-import NavigationBar from "@/components/navbar";
-import Head from "next/head";
 
-const quicksand = Quicksand({ subsets: ["latin"] });
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "Vishal Thapa",
+  openGraph: {
+    title: "Portfolio",
+    description: "Vishal Thapa",
+    images: [
+      {
+        url: "/me.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vishal Thapa",
+      },
+    ],
+  },
+  icons: {
+    icon: "/me.jpg",
+  },
+};
 
 export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en">
-      <Head>
-        <div>Portfolio</div>
-      </Head>
       <body>
-        <div className={quicksand.className}>
-          <NavigationBar />
-          {children}
-        </div>
+        <div>{children}</div>
       </body>
     </html>
   );
