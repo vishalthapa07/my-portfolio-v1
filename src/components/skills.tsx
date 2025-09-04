@@ -63,7 +63,7 @@ const skillsConstant = [
   {
     id: 3,
     stack: "Others",
-    tools: "Git & GitHub, Figma, Wordpress, Vercel, Python, AWS",
+    tools: "Python, Git & GitHub, Figma, Wordpress, Vercel, AWS",
   },
 ];
 
