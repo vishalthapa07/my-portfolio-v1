@@ -6,7 +6,7 @@ import { HiCalendar } from "react-icons/hi";
 const developerConstant = [
   {
     id: 1,
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - July 2025",
     position: "Fullstack Developer",
     location: " SkillPrompt, Butwal, Nepal",
   },

@@ -6,7 +6,7 @@ import { HiCalendar } from "react-icons/hi";
 const teachingConstant = [
   {
     id: 1,
-    date: "Jan 2022 - Present",
+    date: "Jan 2022 - July 2025",
     position: "Instructor",
     location: " SkillPrompt, Butwal, Nepal",
   },

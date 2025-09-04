@@ -35,7 +35,7 @@ export const contactDetails = [
           <div>
             <MdLocalPhone className="text-lg" />
           </div>
-          <div>(+977) 9863658842</div>
+          <div>806-283-7133</div>
         </div>
       </div>
     ),
